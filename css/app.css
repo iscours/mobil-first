@@ -1,0 +1,45 @@
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+.header:before {
+	content: "Mobil First";
+}
+
+.header, .main, .footer {
+	width: 100%;
+}
+.header {
+	background-color: orange;
+	text-align: center;
+}
+.header img {
+	width: 50%;
+}
+.main {
+	background-color: green;
+}
+.footer {
+	background-color: black;
+	text-align: center;
+}
+.footer .title {
+	color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.header:before {
+		content: "Estoy en tablet";
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header:before {
+		content: "Estoy en version desktop";
+	}
+	.header, .main, .footer {
+		width: 1220px;
+		margin: 0 auto;
+	}
+
+}
